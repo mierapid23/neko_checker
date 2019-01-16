@@ -12,7 +12,7 @@ while (1):
 	for i in range(20):
 		server = "http://" + server_ip[i] + "/favicon.icon"
 		try:
-			r = requests.get(server, timeout=3)
+			r = requests.get(server, timeout=5)
 		except requests.exceptions.ConnectTimeout:
 			status = "False"
 		else:
